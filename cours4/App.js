@@ -29,7 +29,7 @@ function Galerie() {
     else
       setIndex(0);
   } 
- 
+
   function recule(){
     if (index > 0)
       setIndex(index - 1);
@@ -46,15 +46,15 @@ function Galerie() {
   }, [index]);
 
   return (
-   <ScrollView>
+  <ScrollView>
     <View style={styles.main}>
       <View style={styles.ligneBoutons}>
-       <TouchableOpacity style={styles.bouton} onPress={recule} > 
-         <Text style={styles.texteB}>Précédent</Text>
-       </TouchableOpacity>
-       <TouchableHighlight style={styles.bouton} onPress={avance} > 
-       <Text style={styles.texteB}>Suivant</Text>
-       </TouchableHighlight>
+      <TouchableOpacity style={styles.bouton} onPress={recule} > 
+        <Text style={styles.texteB}>Précédent</Text>
+      </TouchableOpacity>
+      <TouchableHighlight style={styles.bouton} onPress={avance} > 
+      <Text style={styles.texteB}>Suivant</Text>
+      </TouchableHighlight>
       </View>
       
       <Text style={styles.text}>
@@ -66,8 +66,8 @@ function Galerie() {
       
       <Image style={styles.image} source={{uri: sculpture.url}} />
       <TouchableOpacity style={styles.bouton} onPress={affiche}> 
-         <Text style={styles.texteB}>Description</Text>
-       </TouchableOpacity>
+        <Text style={styles.texteB}>Description</Text>
+      </TouchableOpacity>
       <Text style={[styles.text, affichage ? styles.afficheDesc : styles.cacheDesc]}>
         {sculpture.desc}
       </Text>

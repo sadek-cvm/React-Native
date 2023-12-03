@@ -23,7 +23,6 @@ function LecteurVideo() {
             <Image source={imageHd} />
             <Image source={imagePleinEcran} />
           </View>
-
         </ImageBackground>
     </View>
   );

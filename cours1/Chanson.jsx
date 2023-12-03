@@ -27,8 +27,6 @@ import {View, Text, StyleSheet} from "react-native"
 //     }
 // }
 
-
-
 // Composant fonctionnel
 
 function Chanson() {

@@ -25,31 +25,31 @@ function Galerie() {
 
   function avance() {
   
-       if ( index<3 )
+      if ( index<3 )
         setIndex(index+1);
-       else
-         setIndex(0);
+      else
+        setIndex(0);
 
   } 
- 
+
   function recule(){
     if ( index >0)
-     setIndex(index-1);
+    setIndex(index-1);
     else
-     setIndex(3);
+    setIndex(3);
   } 
 
 
   return (
-   
+  
     <View style={styles.main}>
       <View style={styles.ligneBoutons}>
-       <TouchableOpacity style={styles.bouton} onPress={recule} title="Précédent"> 
-         <Text style={styles.texteB}>Précédent</Text>
-       </TouchableOpacity>
-       <TouchableHighlight style={styles.bouton} onPress={avance} title="Suivant"> 
-       <Text style={styles.texteB}>Suivant</Text>
-       </TouchableHighlight>
+      <TouchableOpacity style={styles.bouton} onPress={recule} title="Précédent"> 
+        <Text style={styles.texteB}>Précédent</Text>
+      </TouchableOpacity>
+      <TouchableHighlight style={styles.bouton} onPress={avance} title="Suivant"> 
+      <Text style={styles.texteB}>Suivant</Text>
+      </TouchableHighlight>
       </View>
       
       <Text style={styles.text}>
@@ -60,7 +60,6 @@ function Galerie() {
       </Text>
 
       <Image style={styles.image} source={remoteImage} />
-     
     </View>
   );
 }

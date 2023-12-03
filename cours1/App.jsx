@@ -2,8 +2,6 @@ import React from 'react'
 import { View, StyleSheet} from "react-native"
 import Chanson from './Chanson'
 
-
-
 function creerTab(){
     const tab = [];
     for(let i = 0; i < 4; i++){
@@ -28,6 +26,16 @@ function Playlist(){
         </View>
     )
 }
+
+// class Playlist extends React.Component {
+//     render() {
+//         return (
+//             <View>
+//                {creerTab()}
+//             </View>
+//         )
+//     }
+// }
 
 const style = StyleSheet.create(
     {

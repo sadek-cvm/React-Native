@@ -25,21 +25,21 @@ function Galerie() {
 
   function handleClick() {
   
-       setIndex(index+1);
+      setIndex(index+1);
 
   } 
- 
+
   function recule(){
     setIndex(index-1);
   } 
 
 
   return (
-   
+
     <View style={styles.main}>
       
-       <Button onPress={handleClick} title="Suivant"/> 
-   
+      <Button onPress={handleClick} title="Suivant"/> 
+  
       
       <Text style={styles.text}>
         {sculpture.name + " de " +sculpture.artist}
@@ -49,7 +49,7 @@ function Galerie() {
       </Text>
 
       <Image style={styles.image} source={remoteImage} />
-     
+
     </View>
   );
 }

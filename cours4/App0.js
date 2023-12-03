@@ -29,10 +29,10 @@ function Galerie() {
 
 
   return (
-   
+
     <View style={styles.main}>
       <Button onPress={handleClick} title="Suivant"/>
-   
+
       
       <Text>
         {sculpture.name + "de " +sculpture.artist}
@@ -42,7 +42,7 @@ function Galerie() {
       </Text>
 
       <Image style={styles.image} source={remoteImage} />
-     
+
     </View>
   );
 }
